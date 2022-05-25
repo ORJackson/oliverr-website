@@ -1,4 +1,4 @@
-import { CircleIcon } from '@radix-ui/react-icons';
+import { GiCampingTent } from "react-icons/gi";
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { DarkModeToggle } from './DarkModeToggle';
@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import { AnimatePresence, motion } from 'framer-motion';
-// import { CommandPaletteIcon } from './CommandPaletteIcon';
 
 const itemVariants = {
   closed: {
@@ -45,7 +44,7 @@ export const Nav = () => {
       <nav className="flex items-center space-x-5 max-w-screen-lg mx-auto text-gray-300 dark:text-gray-200">
         <Link href="/">
           <a className="flex-grow">
-            <CircleIcon className="w-5 h-5 mt-1 hover:text-gray-1000 dark:hover:text-gray-300" />
+            <GiCampingTent className="w-5 h-5 mt-1 hover:text-gray-1000 dark:hover:text-gray-300" />
           </a>
         </Link>
         <ul className="hidden md:flex items-center space-x-6 flex-grow">

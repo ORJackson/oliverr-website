@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as Toggle from '@radix-ui/react-toggle';
-import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
+import { BsSunrise, BsSunset } from 'react-icons/bs';
 import { useTheme } from 'next-themes';
 
 export const DarkModeToggle = () => {
@@ -20,9 +20,9 @@ export const DarkModeToggle = () => {
       }
     >
       {theme === 'dark' ? (
-        <SunIcon className="w-5 h-5" />
+        <BsSunrise className="w-5 h-5" />
       ) : (
-        <MoonIcon className="w-5 h-5" />
+        <BsSunset className="w-5 h-5" />
       )}
     </Toggle.Root>
   );
