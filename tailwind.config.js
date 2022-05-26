@@ -8,7 +8,7 @@ module.exports = {
       extend: {
         typography: ({ theme }) => ({}),
         fontFamily: {
-          sans: ['monospace', 'Poppins', 'Helvetica', 'Arial', 'sans-serif'],
+          sans: [ 'hk-gothic', 'untitled-sans', 'Univers', 'helvetica', 'monospace', 'Poppins', 'Helvetica', 'Arial', 'sans-serif'],
         },
         typography: {
           DEFAULT: {

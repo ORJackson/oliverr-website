@@ -20,9 +20,9 @@ export const DarkModeToggle = () => {
       }
     >
       {theme === 'dark' ? (
-        <BsSunrise className="w-5 h-5" />
+        <BsSunrise className="w-6 h-6" />
       ) : (
-        <BsSunset className="w-5 h-5" />
+        <BsSunset className="w-6 h-6" />
       )}
     </Toggle.Root>
   );

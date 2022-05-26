@@ -1,0 +1,210 @@
+---
+date: '2021-11-25'
+thumbnail: /assets/stop-asian-hate.png
+title: Anti-Asian sentiment in the UK during the Covid-19 pandemic, an analysis of Twitter data
+description: A proposed project using SVM machine learning
+
+---
+
+
+<h2> Abstract </h2>
+
+Coronavirus disease 2019 (COVID-19) is the illness caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), first discovered in Wuhan City, Hubei Province, China. The COVID-19 pandemic has dramatically changed the way individuals live their lives since the virus’s first discovery in China in 2019. For a large number of individuals, this novel coronavirus has not only presented health risks but also risks to their physical and mental wellbeing as they have become victims of unfair prejudice. This has been caused by fear of the virus which has led to a wave of anti-Asian sentiment and discrimination, as well as a sharp increase in hate crimes.  This change in sentiment has been well-documented, with reports of victims being spat on, and otherwise being physically and verbally assaulted in the street becoming commonplace. Statistics show that this is reflected online, with social media sites seeing a dramatic increase in negative posts referring to Asian people. One NHS doctor wrote that to stay silent is to allow “anti-Asian sentiment - and racist attacks to damage our society, the repercussions of which will likely persist beyond the pandemic”  (Coates, 2020). It is highly likely that this anti-Asian sentiment still exists and the repercussions are still being felt. There is an obligation to attempt to uncover this prejudice if it exists, and that is the ambition of this project - to examine the extent to which anti-Asian sentiment has changed in the UK over the course of the pandemic by analysing Twitter data. To do this I will scrape Tweets from before and during the pandemic coming from UK based accounts that reference Asian people or other Asian-related keywords and will apply sentiment analysis to categorise them as positive, negative, or neutral. To carry out the sentiment analysis I will use the machine learning model Support Vector Machine available through the sklearn Python Library, trained on a publicly available dataset of labelled tweets. Having done this I will examine the extent to which sentiment has changed by comparing the proportion of tweets that fall into the three categories. Whilst similar research has been carried out in the USA and the world as a whole, no such research has been applied specifically to the UK. I hypothesise that, in line with the increase in hate crimes reported offline within the UK, there will also be an increase in anti-Asian sentiment on Twitter. Through my research, I also aim to answer the question:  “What are the considerations for design when applying Sentiment Analysis techniques to Twitter data?”. 
+
+
+<h2> Related Work </h2>
+
+For an in-depth review of related literature please see the appendix.
+
+
+<h2> Background Research </h2>
+
+<h3>Support Vector Machine </h3>
+
+For this research project, I will be using the machine learning model Support Vector Machine (SVM) to carry out sentiment analysis on scraped Twitter data.  SVM is a popular classification algorithm, also known as Support Vector Classification. SVM is a supervised machine learning algorithm, so it must first be trained on labelled data.
+
+SVM works by analysing the labelled training data to try to find the optimal hyperplane which divides the data into separate categories, this hyperplane can then be used to classify new data, in a two-dimensional graph this hyperplane is a line, whereas in 3D it is a plane. Whereas most machine learning algorithms look for the most common characteristics that make one class different from another, SVM focuses on the most similar examples. These most similar examples are known as the support vectors. The optimal hyperplane creates a boundary with a maximal margin that is equidistant to the support vectors, this becomes the decision boundary that can be used to classify new data (Zoltan, 2020). For a graphical representation of SVM optimal hyperplane, margin, and support vectors training on two classes please see appendix 4 (Kumar, 2021)
+
+COVID-19: Key dates
+
+Some key dates to bear in mind: the novel coronavirus SARS-CoV-2 (previously named 2019-nCoV) was first reported to the World Health Organisation (WHO) on 31 December 2019. On January 30, 2020, the WHO declared the COVID-19 outbreak a global emergency, and on March 11 2020, the WHO declared it a global pandemic (Cennimo, 2021). In appendix 3 I have included a timeline of UK coronavirus lockdowns (March 2020 - March 2021), on the 16th of March UK citizens were instructed to avoid non-essential contact and travel, and on the 23rd of March the first UK lockdown was announced and people were instructed to stay at home (Institute for Government Analysis, 2021). 
+
+<h3>COVID-19 and Discrimination </h3>
+
+In a letter to the British Medical Journal, an NHS doctor in 2020 wrote of the lack of acknowledgement of the spread of racial prejudice and xenophobia caused by the Covid-19 pandemic. Dr Coates wrote that “Fear leads to the desire to understand and control situations. From this we see a surge of prejudice and discrimination, prescribing an “otherness” to disease to feel protected and ascribing blame to justify prejudicial rhetoric.”  (Coates, 2020). She points to other examples of fear around diseases leading to prejudice and racial discrimination: the Jewish persecution during the black death, the treatment of LGBTQ people during the HIV AIDS pandemic, and West-African people when Ebola was at its most prevalent  (Coates, 2020)
+
+Indeed around extremist events, this fear can cause people to attribute unfair blame to, or scapegoat, a group, for example after a terrorist attack individuals that share the ethnicity or religion of the perpetrators often experience negative sentiment. Often this form of discrimination leads to a surge in hate crimes.
+
+After the 2017 London Bridge Attack that involved vehicle ramming and subsequent mass-stabbing at Borough Market caused a surge in hate crimes that were felt by the British-Muslim community across the UK. The crimes reported ranged from verbal abuse to violent attacks in the street. In the days after the attack, London saw a fivefold increase in reported Islamaphobic attacks, and experts believe under-reporting of hate crimes, in general, is a major issue (Dodd and Marsh, 2017). 
+
+Similarly, after the Manchester bombing in 2017, Islamaphobic attacks in Manchester increased by 500% (Grierson and Booth, 2017). Reported crimes included victims being spat on in the street, verbal abuse, and the violent damage and destruction of mosques, with one mosque being the victim of an arsonist’s attack. Despite many Muslims feeling the devastation of the bombing, negative sentiment toward Muslims increased drastically. After the attack a local Muslim leader condemned the attack as a “horrific atrocity” and sought to dispel the rumour that the perpetrator, Abedi, had worked at the Didsbury mosque, stating that “a small section of the media are manufacturing stories and making unfounded points” (Grierson and Booth, 2017). It is without a doubt that the media’s reaction to this event helped reinforce the negative sentiment felt toward British Muslims.
+
+
+In her letter to the BMJ, Dr Coates points to examples of prejudice caused by the Covid-19 pandemic: a Singaporean student attacked in London, a Chinese takeaway owner being spat on, a nurse physically assaulted on her way to a shift at the hospital she works at in Brighton (Coates, 2020). These are but a few of the examples of the rise of anti-Asian hate crimes that have surfaced throughout the pandemic. 
+
+Dr Coates writes that it is the responsibility of the government and the media to educate the public and condemn these actions to avoid long-lasting repercussions (Coates, 2020). Unfortunately, the repercussions Dr Coates was hinting toward are still being felt, as the pandemic has continued so has the anti-Asian sentiment; Asians are being discriminated against both in-person and online. Racist sentiment has led to further hate crimes being committed, indeed in the UK hate crimes against South-East Asians rose by 300% (Khan, 2021). Online, anti-Asian hate speech has increased dramatically, with some research pointing to an increase in over 68% of racist tweets (Nguyen, 2020). 
+
+
+
+For further reading on the background of this topic, including statistics and examples on the rise of anti-Asian sentiment and hate crimes on and offline, please see the appendix.
+
+
+<h2>Motivation</h2>
+
+People can be discriminated against for any feature which may define them, for instance, race, gender, age, nationality, sexual orientation, as well as other categories. Groups of people have always discriminated against and conflicted with opposing groups, but the concept of racism as a historical force rose in the 1400s with the invention of the printing press and the European discovery of the Americas - the interaction with indigenous people from around the globe and the means to widely spread false rhetoric about them (Hopkinson 2020). Until very recently, most western societies believed in a form of racial hierarchy, in particular white supremacy. However, after the second world war, it was realised that this racism was a cause of the death seen during the Holocaust, causing a break in the acceptance of the theory of white supremacy (Hopkinson, 2020). Following this, there was the rise of the Civil Rights movement in the US and the end of segregation, as well as the introduction of antiracist laws in the UK, although some parts of the world were slower to react. The end of apartheid did not come to South Africa until the mid-90s.
+
+However, racism has all but gone away. The Chinese government is accused of committing genocide against the Uyghur, mostly Muslim, population (BBC, 2021). The murder of George Floyd by a police officer has exposed the systemic racism in the US, sparking the Black Lives Matter movement, and here in Britain ethnic minorities are hugely over-represented in prisons - even more so than in the US - with black people accounting for 3% of the population but 12% of the prison population (Kentish, 2017). Evidently, racial discrimination is still a huge problem across the globe.
+
+Anti-Asian racism has been exacerbated by fear around the Coronavirus pandemic, with a well-documented increase in anti-Asian sentiment and hate crimes both on and offline. However, much of the research into the rise in anti-Asian sentiment online has focussed either exclusively on the USA or the world as a whole. No piece of research has been carried out to examine the rise in anti-Asian sentiment found on social media from UK-based accounts. That is exactly what this study intends on doing.
+
+Racism is a fundamental problem for that causes division within society. If there is a possibility that it exists then there is a responsibility to attempt to uncover it. Racism can often go unnoticed by those it does not affect, and it will not stop if the general public remains unaware of it. Exposing racism can enable educating people about its existence so that we as a society can work towards eradicating the prejudice and racism that has developed as a result of the pandemic.
+
+
+<h2>Project Description</h2>
+
+Through this project, I intend to analyse the extent to which anti-Asian sentiment coming from UK-based accounts has changed on Twitter over the course of the Covid-19 pandemic. To do this I will scrape tweets, using the Twitter API, that are related to Asia and Asian people and, using the machine learning model Support Vector Machine (SVM), I will carry out sentiment analysis to categorise tweets as positive, negative, or neutral. I will compare the percentage of tweets that fall into these categories to look for trends reflecting changes in sentiment towards Asians over the course of the pandemic. I will also seek to answer the research question: “What are the considerations for design when applying Sentiment Analysis techniques to Twitter data?”. 
+
+
+<h2>Research Methodology</h2>
+
+Within my research, I will focus on the social media platform Twitter to assess the extent to which the COVID-19 pandemic has seen an increase in anti-Asian sentiment within the UK. To carry out this research I will scrape tweets using the Twitter API, localised to the UK, prepare them for sentiment analysis by cleaning the data, carry out sentiment analysis using the Support Vector Machine algorithm, and then display my findings. I will explain the steps to my methodology in more detail here.
+
+<h3>Twitter API </h3>
+
+Twitter is a micro-blogging website where users can post a “tweet” on a subject of their choosing; other Twitter users can then reply to these tweets and an open conversation can be had online. The Twitter Application Program Interface can be used to provide another application with current and historical access to Twitter data, in the case of this project, it will provide the program I write with a random 1% sample of the tweets relevant to my research over the period around the pandemic. Twitter facilitate academic research access by providing enhanced access to the Twitter API for academic researchers, including access to all Twitter API v2 endpoints, a higher monthly tweet cap of 10 million tweets per month, as well as other features. I will make use of this academic research access for this project. To interact with the API I will write a program in Python to collect the data, based upon my selection criteria the API will return a random 1% sample of all matching tweets that are publicly available.
+
+<h3>Twitter data </h3>
+
+Since the ambition of this project is to capture the sentiment of people from the United Kingdom towards Asian people, I want to only gather tweet data from people based in the UK. To do this I will restrict the selection based upon tweets that are geotagged within the latitude and longitude coordinate range, as well as tweets from accounts that are based within the UK; the account home location is provided in the user’s public profile and since only a small percentage of tweets are geotagged with a current location this will provide more tweets to analyse. I will also restrict the tweets collected to only be English language tweets, as this will be the language the sentiment analysis machine learning model will be trained on. 
+
+To discern that tweets are relevant to Asia or Asian people I will use a similar technique to that used by Nguyen et. al (Nguyen, 2020) in their research on the extent of anti-Asian sentiment in the USA. All the tweets that I select for the sentiment analysis will use one or more Asian race-related keywords, including slurs. Keywords will be sourced from other studies and an online database of racial slurs (www.rsdb.org, n.d.) that was also used by Nguyen et al. To assess whether or not there has been a change in sentiment as the coronavirus pandemic has developed I will need to compare different time frames. 
+
+
+From the COVID-19 key dates provided in the background section, I discern that by early 2020 most in the UK would be aware of the emergence of the novel coronavirus, and certainly, almost all would be aware of the pandemic by mid-March 2020 as the restrictions began. Even though the pandemic itself had not started, I will begin the selection of tweets that match the criteria of location and reference to Asian people when the novel coronavirus was first announced to the WHO, on 31st December 2019, as this is when the outbreak was first becoming public knowledge. I will collect tweets within 6 distinct time frames: 31st December 2018 - 30th June 2019 (to compare from pre-pandemic), 31st December 2019 - 30th June 2020, 1st July - 30th December 2020, 31st December 2020 - 30th June 2021, 1st July - 30th December 2021, 31st December 2021 - the time of carrying out research, approximately 1st June 2022. 
+
+<h3>Support Vector Machine and Sentiment Analysis </h3>
+
+Sentiment analysis, also known as opinion mining, is a technique within machine learning and natural language processing used to predict whether a statement, piece of text, or, in this case, a tweet is positive, negative, or neutral. In the context of this project, a tweet that references Asia or Asians that has a negative sentiment will be a tweet exhibiting anti-Asian sentiment. 
+
+As I am interested in comparing the results of my project with the results of the US-based study by Nguyen et al I will also use the same machine learning model as they did, Support Vector Machine (SVM). Aside from providing the ability to compare my results with another study, Support Vector Machine is a very suitable model in its own right, optimal for classification problems and very popular for sentiment analysis.
+
+I will be using the SVM from the well documented sklearn Python library. SVM is a supervised machine learning model, meaning that it must be trained by being fed data, in the case of this project this will involve feeding the model large collections of tweets that already have been categorised as having positive, negative, or neutral sentiment, allowing the algorithm to learn to categorise tweets as one of these categories on its own. 
+
+Several publicly available datasets could be used to train my model. One option is the open-source Twitter Tweets Data for Sentiment Analysis dataset available on Kaggle, which contains 30,000 unique tweets. Alternatively, there is the Pre-processed Twitter Tweets data set, also available on Kaggle, or the widely used Sentiment140 dataset which was also used by Nguyen et al in their research. Whichever dataset I use will be divided into Training vs Testing data with an 80:20 split.
+
+To train the Support Vector Machine model the dataset must be pre-processed or “cleaned” so that the algorithm can interpret the text. To do this each tweet has emojis and punctuation removed and words are converted to their stem (e.g. “chocolatey”, “chocolates”, or “choco” are converted to “chocolate”). Of course, the Pre-processed Twitter Tweets dataset has already been cleaned so this would not be a requirement for this dataset.
+
+Once the training dataset has been cleaned it will be used to train the SVM model. Once training is complete the model will be tested for accuracy with the section of the dataset reserved for testing. The accuracy of the model will be demonstrated before using the model on the processed (cleaned) scraped Twitter data from the various timeframes across the pandemic. 
+
+Using my SVM model on the scraped Twitter data I will produce findings which will be displayed graphically to demonstrate whether or not there has been a change, from before the pandemic and throughout the pandemic, in the level of anti-Asian sentiment in Tweets from UK based accounts.
+
+
+<h2> Project Aims and Objectives </h2>
+
+The purpose of this research is to use the Support Vector Machine machine learning algorithm to carry out sentiment analysis to investigate the extent to which anti-Asian sentiment has increased or decreased over the course of the pandemic. I will also answer the research question: “What are the considerations for design when applying Sentiment Analysis techniques to Twitter data?”. 
+
+My main objectives are to: 
+Compile a list of Asian related key terms for the sake of Twitter scraping
+Use twitter’s API to scrape tweets from UK based accounts that use one of these key terms
+Process this scraped data
+Set up the SVM model for sentiment analysis
+Download and process a dataset for training the SVM
+Train the SVM model
+Test the SVM model
+Recalibrate the SVM model if necessary
+Use the SVM model on scraped data
+Carry out statistical analysis and present findings graphically
+Present my findings in my project research paper and answer my research question.
+
+
+
+<h2> Deliverables and Components </h2>
+
+The main deliverables and components of my research project are:
+An accurately working SVM model for sentiment analysis
+The findings from my research presented graphically
+My research paper with sections on:
+Further background research on sentiment analysis and SVM (including literature review)
+Further background research on the rise of anti-Asian sentiment during the COVID-19 pandemic
+My research findings
+An evaluation of my research findings
+A section responding to my research question on design considerations when applying sentiment analysis to Twitter data
+
+
+
+<h2> Project Plan, Timeline, and Milestones </h2>
+
+For an in-depth explanation of how I plan to carry out this research please see the Research Methodology section.
+
+A timeline for my research project with milestones to reach can be seen below:
+
+
+
+
+<h2> Risk Analysis </h2>
+
+Several risks could be associated with this project. I will discuss both general and project-specific risks, which I will assign a risk likelihood (0/5 = no risk of occurring, 5/5 = absolute certainty of occurring) and will then discuss how I will work to prevent them.
+
+General Risks
+
+Some of the more general risks that could apply to any project of this type are data loss, malware attacks, and unmet deadlines.
+
+
+Project Specific Risks
+
+Some of the project-specific risks include: the machine learning algorithm giving inaccurate results due to poor set-up, and the results inaccurately reflecting the true state of affairs due to the limitations of the Twitter API.
+
+
+Data Loss
+
+Likelihood: 3/5
+The data that I collect using Twitter’s API, the progress made in the development of the machine learning model, and the project write up could all potentially be lost due to the loss or malfunction of my personal computer. I will be taking preventative action, as I do with all of my work, by using cloud technologies such as writing up my project in google docs, storing scraped data in google drive, and using GitHub for version control to backup all of my work.
+
+Malware Attack
+
+Likelihood: 2/5
+Similarly to data loss caused by loss or damage of any of my devices a malware attack also prevents the opportunity to cause severe setbacks in the progress of my research project. I will similarly protect against this by using cloud technologies to develop and back up my work
+
+Unmet Deadlines
+
+Likelihood: 1/5 
+Slow progress could be made, presenting the opportunity to miss the project hand-in deadline, though I see this to ultimately be unlikely. Nonetheless, certain stages of the project may present bottlenecks including building a working Twitter scraper, the development of an accurate SVM model for sentiment analysis, turning findings into readable results (presenting the results graphically), and finally, the project write-up. To prevent this risk I will ensure to not underestimate the scale of this task and will start with the technical stages early.
+
+An Inaccurate Machine Learning Algorithm
+
+Likelihood: 4/5
+I believe that it is highly likely that, to start with, my SVM model will not produce accurate results, which is why I rate this risk so highly. However, if the model does not score accurately on testing then it can be retrained with new parameters. I will therefore prevent this risk by ensuring that testing the model is a fundamental part of my methodology.
+
+Results inaccurately reflecting the true state of affairs due to the limitations of the Twitter API
+
+Likelihood: 1/5
+Even the best available free version of the Twitter API for Academic Research (which has more features than any other free version) still only gives you access to a random 1% of all publicly available tweets. Because of this, there is of course the possibility that the results will not accurately reflect the reality of public sentiment. This could happen due to the random 1% sample of tweets either under or overrepresenting tweets that display a negative sentiment towards Asia or Asian people. However, most if not all of the other research papers that have examined this issue are also constrained by the same limitations and they have still uncovered an increase in Anti-Asian sentiment (the Firehose version of twitter’s API that gives access to every tweet is usually beyond the scope of the budget of academic research). As a result, I believe this to be of low likelihood. The only way to prevent this risk is by paying the fee, which won’t be an option. It is nonetheless worth bearing in mind when carrying out the research.
+
+
+
+<h2> Conclusion </h2>
+
+Fear around the COVID-19 pandemic has led to a surge in anti-Asian hate speech and hate crimes both online and in person. Studies have shown that anti-Asian sentiment has increased on Twitter in the US and the world as a whole since the start of the pandemic, though no study has yet focussed exclusively on the UK. Through my research I seek to discover whether the increase in hate crimes seen on UK soil is reflected in an increase in anti-Asian sentiment on social media coming from the UK, I will specifically focus on Twitter. To do this I will use Twitter's API to scrape tweets that have used Asian-related key terms coming from UK based accounts throughout the pandemic, and then apply Support Vector Machine powered sentiment analysis to this scraped data. I will display and evaluate my findings in my research paper and also answer the research question: “What are the considerations for design when applying Sentiment Analysis techniques to Twitter data?”. 
+
+<h2> Appendix </h2>
+
+<h3>Background </h3>
+People instinctively attribute blame to a group of people after a negative event. Blame is often reinforced by the media and may lead to discrimination towards that group of people. For example, a terrorist attack can be devastating for society. In the aftermath, negative sentiment is often felt by communities that are seen as having something in common with the perpetrators; for instance a common background or shared trait such as ethnicity or religion. The 9/11 attack on the World Trade Center in 2001 had extremely negative effects on Islamic and Arab communities within the United States. In the aftermath of 9/11, these communities were exposed to hate crimes that included harassment, death threats, physical violence and the burning and destruction of Mosques; from 2000 to 2001 the FBI recorded an increase in hate crimes toward Muslims of 1617% (Alfonseca, 2021). These repercussions continue to be felt today in America, and negative sentiment towards American-Muslim and American-Arab communities spikes whenever an extremist attack occurs overseas (Mekouar, 2022).
+
+Just as terrorist attacks over the last two decades have caused a surge in Islamaphobic hate- crimes, the Covid-19 pandemic has seen a rise in hate crimes committed against Asian people. Anti-bullying charity Ditch the Label found a rise of 1662% in Asian-targeted hate speech online in 2020 compared to 2019 (Cipirska, 2021). The fact that Covid-19 was first discovered in China as well as the use of terms like “Chinese virus” and “Wuhan virus” by politicians and the media has caused an association between China and Asia with the virus, the pandemic, and all of the severe restrictions put in place to combat the spread. This negative association is seen as a probable cause of the documented increase in anti-Asian hate crimes (Yeh, 2020).
+
+Over the last two years, Asian communities around the world have been feeling the rippling effects of negative sentiment caused by the pandemic. In the US in 2021, President Joe Biden signed the Covid-19 Hate Crimes Act to attempt to curtail the surge in hate crimes, felt particularly by Asian Americans (McCarthy, 2021). A report released in March 2021 by the advocacy group Stop AAPI Hate found that over the previous year over 6,600 hate crimes against American Asians had been reported; Chinese individuals were the most likely victims (43.7%) and reports of physical assault increased by 64% from the previous year (Jeung, Horse and Cayanan, n.d.). One of the most horrific events of its type in 2021 in America saw a Georgia man reportedly fatally shoot 8 people across 3 Atlanta spas, 6 of whom were of Asian descent. The District Attorney on the case is seeking enhanced sentencing under Georgia’s hate crimes law (Associated Press, 2021). 
+
+In the UK anti-Asian sentiment fueled by the Covid-19 pandemic has similarly been on the rise.  In March 2020, a few months into the pandemic, a Singaporean student was physically assaulted in London, the perpetrator stated “we don’t want your Coronavirus in our country” (Cheng, 2020). Hate crimes against East and South-East Asian communities rose by 300%, a report by End The Virus of Racism found (Khan, 2021). Hate crimes and acts of racial violence have been perpetrated against not just Chinese people but anyone “sharing the perceived phenotype of “Chineseness”... light-skinned East and South-East Asians” (Yeh, 2020). A BBC investigation documenting the increase in anti-Asian hate crimes uncovered various forms of racial abuse including verbal harassment (telling a woman “you are the Chinese virus, go back to your country”), violent assault in the street, and a victim being spat on; this investigation attributes the rise in xenophobic attitudes to fear around coronavirus. Victims told the BBC that “the rhetoric of some leaders [has] caused enduring harm”, quoting Donald Trump who used terms like “Chinese virus” and “kung flu” and described China as “the nation that unleashed this plague upon the world”  (Swift, Motture and Bull, 2021).
+
+
+<h3>Related Work </h3>
+Sentiment analysis is the process of drawing meaning from text. To a human, understanding the meaning of a sentence may seem easy. However, the meaning of a word can change significantly when used in different contexts, extracting the meaning of a string of words based on their context when grouped together is a complex process. You can use a human to understand a single sentence, paragraph or even a book, but if you are to look for trends in thinking you need to analyse a larger data set; here computers can analyse a comparatively huge data set in much less time than a person. To do this you must train a computer to interpret meaning from text. As a field of machine learning, computers are used to interpret a text by examining the relationships between words. Sentiment analysis is a subfield of Natural Language Processing (NLP) that has been applied to the news, other media outlets, and social media to examine trends in thinking surrounding the Covid-19 pandemic.
+
+Much evidence exists documenting the increase in hate speech, racism, and xenophobia directed towards Asian people online since the start of the Covid-19 pandemic. One paper written by Reuben Ng analysed over 30 million newspaper articles online from 20 countries and using sentiment analysis found evidence of societal shifts in sentiments towards Asian people, comparing the baseline period of October to December 2019 against the start of the pandemic from January to May 2020 (Ng, 2021). Ng found that pre-pandemic Jamaica and New Zealand showed the most signs of anti-Asian sentiment, whereas during the pandemic anti-Asian sentiment was highest in the US and Nigeria.
+
+Several studies have used the Twitter Application Programming Interface (API) to extract data to examine sentiments towards Asians and have found that the increase in hate speech Asians are exposed to in person is reflected in the sentiment seen online.
+
+Nguyen et al. collected over 3 million race-related tweets from the USA from November 2019 to June 2020 and carried out sentiment analysis using Support Vector Machine, a supervised machine learning model (Nguyen et al., 2020). Nguyen et al found that negative tweets referencing Asians increased by 68.4% during the period, whereas racist tweets referencing other ethnicities remained relatively stable. 
+
+A study by Dubey examined over 16,000 tweets during April 2020 to examine the extent of cyber racism during the pandemic. Any tweet that mentioned “ChineseVirus”, “WuhanVirus” or “ChineseVirusCorona” was collected, and using a machine learning model analysed sentiment and found that the majority were negative and also found a sense of “fear, anger, and disgust among Twitter users” (Dubey, 2020). Dubey attributes Trump’s use of the term “Chinese Virus”  which gained significant momentum as causing an increase in hate speech online (Dubey, 2020).

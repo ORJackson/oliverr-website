@@ -1,0 +1,95 @@
+---
+date: '2021-11-25'
+thumbnail: /assets/information-security-merger.jpg
+title: Information security management concerns arising from the merger of two financial organisations
+description: An investigation into a hypotehtical merger
+
+---
+
+<h2> Introduction </h2>
+
+Within this report I will address the information security management issues that arise from the merger of two hypothetical organisations: the private London based bank Pur$€ and the Tokyo based financial firm ¥vest, forming the multi-national investment bank Pur$€-¥vest. 
+
+I will begin by outlining the information security issues that will arise from the merger, with a focus on the kind of data the companies hold. I will then provide an explanation of some measures that should be implemented by the two companies. In my third section I will cover two security policies that I recommend Pur$€-¥vest to implement, relating to access control and cloud computing.
+
+Finally I will conclude with reference to relevant information security management frameworks, the UK General Data Protection Regulation (GDPR) and Japan’s Personal Information Protection Commission’s (PPC) Act on the Protection of Personal Information (APPI). 
+
+
+<h2> Data </h2>
+
+By 2025, 5.9 billion people, 71% of the world’s population, will be connected to the internet (GSMA, 2018). With the growth of mobile technology, people can now connect to the internet whenever they want; combine this with the growth of the Internet of Things (IoT), (devices with embedded systems like smart watches and insurance car trackers), the amount of data being collected to understand behaviours is growing rapidly. The financial services industry is “among the most data [intensive] of today’s economies” (OECD, 2020).
+
+Pur$€-¥vest, like other businesses in the financial sector, will hold extensive client data. Much of this data will be regarded as “personal” if it relates to an identified or identifiable individual (someone can be identified by a name, a number, an IP address etc) and so is covered by GDPR regulation (ICO, 2019a) . Firstly, they will hold information on the financial products their clients have invested in (it is possible that financial data may not contain information relating to an individual, though if it matches up with a customer number, for example, and that can reasonably be used to identify a living person then it is personal under UK GDPR). Secondly, they will have detailed information on their clients due to a standard in the investment industry known as Know Your Client (KYC). Regulation surrounding KYC is intended to prevent money laundering and terrorism finance, as a result financial services firms must carry out in-depth assessments of their clients’ risk profiles, and are required to collect data on, among other things “name, date of birth, address, employment status, annual income, net worth, investment objectives, and identification numbers” (Investopaedia, 2019). 
+
+Pur$€ and ¥vest may collect biometric data for multi factor authentication (MFA), protecting both the firm and its customers from theft. Fingerprint access may be used to authenticate employees attempting to access buildings, and facial recognition software may be used at ATMs to authenticate an individual withdrawing money, as is being used in Singapore today (Q5id, 2020). Biometric data is regarded as “special category data” (ICO, 2019b), it is more sensitive than personal data under UK GDPR and afforded extra protection, Pur$€-¥vest must have explicit consent to process it (ICO, 2021a) . With the rise of cyber crime, the use of biometric MFA is likely to become more prevalent given the extra level of security it offers.
+
+<h2> Issues </h2>
+
+It is vital that Pur$€ and ¥vest carry out their due diligence and prepare appropriately. Too often businesses are more concerned with their potential return on investment rather than cyber security risk during a merger (Emelianov, 2019). If one business has some cyber security flaw leaving them exposed to a data breach, on merge as their IT systems combine the other will be exposed too. A lack of due diligence could expose Pur$€ and ¥vest to serious cyber security problems.
+
+Indeed this is particularly true when migrating their application platforms onto one shared platform. These applications, for instance those used by clients to track portfolios,  are open to risks like issues of broken access control, the most common web application vulnerability today (OWASP, 2021). Merging the firms and their applications will expose one business to the risks of the other, particular attention must be paid to common security threats.
+
+When Pur$€ and ¥vest merge, they will be transferring huge amounts of confidential, sensitive, and personal data between their data centres in Europe and Asia. They must ensure that the transfer is secure (Emelianov, 2019). 
+
+Cloud services are recognised as the banking solution for the future, a means for “financial services firms to store data and applications and access advanced software applications via the internet” (Deloitte, n.d.). However, cloud services are not risk free. The risks associated are fundamentally concerned with data and access, among the list of risks are the potential for theft of data by a malicious actor (who could be an insider), incomplete control over access to sensitive data, and the lack of staff with sufficient security training to manage security for cloud applications (Mcafee, 2018).
+
+<h2> Measures </h2>
+
+Pur$€ and ¥vest need to ensure that there are no cyber security surprises once the merger has completed. A 2016 report found that 80% of businesses regard cyber security issues as very important during the merger and acquisition process, but 40% of businesses surveyed who had gone through a merger or acquisition reported discovering a cyber security problem after a deal had gone through (Westmonroe, 2016). It is essential that both firms carry out their due diligence; traditionally this has meant carrying out an audit to examine financial records (Chen, 2019), but today for any company considering a merger an in-depth review of cyber security at each firm is important. Pur$€ and ¥vest should have a cybersecurity health-check carried out by a third party. Such companies are accustomed to working within regulatory frameworks, and so not only can help mitigate against threats but can help with cyber security compliance too. The case of the acquisition of Yahoo by Verizon should demonstrate the value of doing due diligence: before the deal was finalised - investigation exposed historical data breaches, this caused the renegotiation of terms and the knocking off of $350 million from the price offered by Verizon (Lunden, 2017). Without this investigation Verizon would have paid full price for Yahoo and taken on liability for its past data breaches. If both companies have thorough assessments carried out prior to merger the potential for unpleasant cyber security surprises for Pur$€-¥vest is severely limited. 
+
+ Pur$€ and ¥vest can mitigate risk by preventing broken access control in their applications. Access control, or authorisation, determines what users can do (access, read, write) on your application; access control comes into effect once a user is logged in (authenticated). If access control is broken the potential damage a malicious user can cause is vast, potentially causing a huge data breach. Broken access control is the number one web application security threat today (OWASP, 2021). In order to prevent broken access control Pur$€-¥vest must develop their new merged application with security in mind, some key issues to pay attention to include: deny by default, implement appropriate logging, and validate permissions on every single request. If Pur$€ and ¥vest intend on keeping either of the companies existing applications they should have their security teams carry out a thorough test on the application to expose access control weaknesses. Finally,  Pur$€-¥vest  should ensure that their new security policy covers access control. Many security firms recommend using an access control matrix to define access rules (Kish, 2021). 
+
+Pur$€ and ¥vest should consider a number of other measures to mitigate against security risks during their merger, though it is beyond the scope of this essay to cover them all in depth. Other measures include: ensuring that the transfer of data between London and Tokyo is secure, for example by using secure data rooms (Emelianov, 2019); ensuring issues of conflicting architecture of applications are resolved prior to the merger; mitigating against other common application risks like security misconfigurations, cryptographic failures, and injection; and when they introduce it, taking measures to ensure their cloud services are secure through using services with high-end firewalls, with good physical security, and strong encryption.
+
+Pur$€ and ¥vest should be motivated to take cyber security measures not only to comply with regulation, but also because they have an ethical duty to do so. Furthermore, adhering to an ethical code will protect their reputation from damage, particularly in such a well-connected world with growing concern for data privacy.  The  ISACA has produced extensive guidance on the ethics of data privacy and argues that as laws are often slow to react to technological development, organisations should not only comply with traditional jurisdiction but also comply with its “international data privacy principles” which provide a stringent code for an ethical approach to data privacy (Lee, Zankl and Chang, 2016).
+
+
+<h2> Policies </h2>
+
+An Information security policy (ISP) is used by an organisation to set out exactly how they are going to protect their data and is used to “coordinate and enforce a security program across an organization” (Cassetto, 2019).  ISPs should be regularly updated  to keep in line with organisational and technological developments. These policies protect valuable assets and help keep data out of the wrong hands by ensuring confidentiality, integrity and availability of data (Lutkevich, 2021). They also help ensure compliance to legal and regulatory requirements.
+
+Given the risks Pur$€-¥vest will be exposed to as they merge and migrate to one centralized application, it is fundamental that they have an information security policy covering access control (AC). I will outline standards, procedures, and guidelines for Pur$€-¥vest’s AC policy.
+
+Pur$€-¥vest’s AC system is put in place to preserve the integrity, confidentiality, and availability of the information of its clients, partners, and employees. It should facilitate a secure working environment for its employees.
+Levels of privilege will be set out in an access control matrix
+These levels include user, admin, domain admin, super-user, and root access.
+Privilege rights will be granted by the IT team, reporting to Pur$€-¥vest’s CISO.
+All users will have unique log-in information, group IDs are not permitted.
+Access will be granted according to the principle of least privilege (an employee will be given the sufficient information necessary to perform their tasks, but no more).
+A logging system will be used to monitor information access.
+Access to Pur$€-¥vest’s IT system will be via a unique company username and complex password.
+Passwords must be reset at least every 90 days.
+A complex password is at least 10 characters long and includes symbols, numbers, and upper and lower case letters.
+Users must not share their passwords.
+Users are obliged to report any breach of IS policies to Pur$€-¥vest’s CISO.
+Any user found to be in breach of this policy will be subject to Pur$€-¥vest’s disciplinary procedure.
+All users should work towards ensuring all data is accessed only by those who are authorised even if the IT security system fails to do so.
+Portable computers and devices must not store any sensitive information related to Pur$€-¥vest or its clients, unless protected by a company log in system.
+Users must ensure any laptop or device with remote access to the IT system or containing company data must be left logged out and in a secure location.
+
+From January 2022, Pur$€-¥vest’s use of cloud computing will support its investment and stock trading activities internationally, this will facilitate storage of the vast amounts of data that financial activities generate (card transactions, stock market transactions, loans, insurance documents) whilst also enabling scalability of business as the firms expand (CloudSecureTech, 2017). A Cloud Computing Policy will help keep their operations secure. I will outline relevant standards, procedures, and guidelines.
+
+Pur$€-¥vest will use cloud computing services to store confidential, personal, and potentially sensitive data, protecting this data is therefore extremely important.
+Pur$€-¥vest will only use cloud services with data centres based in countries that adhere to UK GDPR and Japan’s APPI regulation. (The latest APPI amendments officially come into effect at the same time as Pur$€-¥vest’s cloud support rollout,  in spring 2022 (Nunn, 2020)).
+Pur$€-¥vest will not use cloud services located in countries with intrusive security laws.
+Pur$€-¥vest will use the cloud service provider’s encryption and access control tools.. 
+Any confidential, personal or sensitive data may only be stored in the cloud if proper encryption is used, meeting current standards such as FIPS 140-2 and FIPS 197 (ICO, 2019).
+Pur$€-¥vest will use cloud management logging tools to create audit trails. 
+Users are obliged to report any breach of Cloud Security policies to Pur$€-¥vest’s CISO.
+Any user found to be in breach of this policy will be subject to Pur$€-¥vest’s disciplinary procedure.
+All users should work towards maintaining the security of any data related to Pur$€-¥vest and its clients, even if the IT security system fails to do so.
+Users will take part in regular training to assess and reinforce their knowledge of these policies.
+
+
+
+<h2> Conclusion </h2>
+
+Pur$€ and ¥vest are likely to hold extensive data relating to their customers and other businesses. Under the framework of EU GDPR the transfer of data to another country may only happen if it offers an adequate level of data protection. In 2019 Japan was one of the first countries to be granted an adequacy decision by the EC, and  Japan has also deemed the EU adequate under its APPI (Ga4gh, 2019). Since Brexit, the EU GDPR no longer applies within the UK but its provisions have been incorporated into UK law as the UK GDPR.  The EU GDPR will continue to apply to Pur$€-Yvest if it operates in, offers services to, or monitors individuals in the EEA.  The UK's adequacy decisions for third countries include countries in the EEA and countries covered by EU adequacy decisions (ICO, 2021b). Similarly, Japan’s PPC has extended its designation of the EU’s adequacy to the UK under Article 24 of the APPI, meaning that it regards the UK as having sufficiently stringent regulations protecting an individual’s data rights and interests (Fujikouge and Clark, 2020). This means that if framework regulations are adhered to, Pur$€ and ¥vest are free to share their data without the need for extra safeguards.
+
+Nonetheless, Pur$€ and ¥vest should proceed cautiously to ensure data security; a data leak would be extremely damaging to their reputation and is likely to result in legal action and large fines. Under UK GDPR and DPA 2018 regulation, organisations may be fined up to £17.5 million or 4% of annual global turnover, whichever is greater (IT Governance, 2016). Under Japan’s PPC APPI a business can be fined up to 100 million Yen (£666,000), but as Pur$€-¥vest will be holding data on citizens of both countries they could be fined in either jurisdiction, depending on the origin of the data. Both organisations should be concerned with mitigating information security risks. By accepting the responsibility of UK data, ¥vest accepts the risk of receiving higher fines than under Japanese law. Similarly,  Pur$€ must ensure that ¥vest will handle the newly shared data securely to avoid the large GDPR fines.
+
+
+A key consideration in 2021 and beyond is the widespread introduction of working from home caused by the covid-19 pandemic, and the implications this has for information security management. Working from home gives rise to questions over issues of access and security: what device is the employee using to do their work? Who else has access to the device? Is the employee connecting to the internet via a secure VPN? How secure is their firewall? Some of the measures businesses take to ensure information security become redundant under the ‘new normal’ of working from home. If ‘the office’ is no longer a central building but now the employee’s home, a business cannot control who has access to the building and cannot easily control the IT infrastructure used to defend against cyber attack. Pur$€-¥vest should be wary and should respond by educating employees of the risks, and setting out a Working From Home Policy outlining the requirements for IT security infrastructure for those working off-site. They should also bear in mind that these measures can only go so far, and consider if they can truly ensure that adequate security is in place, particularly if employees deal with the most sensitive data, ICO deemed ‘special category’ data (e.g. biometric). 
+
+Financial firms gather and store more data than firms of any other industry. Much of this data is confidential, personal, or sensitive. Pur$€ and ¥vest must do all they can to protect against a breach. Issues that arise from the merger include: the potential of unearthing existing security problems post merger; having to transfer  personal / sensitive data between their locations; the migration of applications onto one shared platform; the use of cloud services to store data from 2022. Given Japan and the UK’s mutual agreement on the adequacy of data protection laws, the transfer of personal data between Pur$€ and ¥vest can go ahead without the need to put in place extra safeguards. Nonetheless, Pur$€-¥vest must take steps to ensure security as they merge; measures include: carrying out due diligence in the way of security health checks; ensuring applications are secure by preventing broken access control and mitigating against other common threats; protecting data once transferred by using secure data rooms; and using cloud services with the best firewalls and strong encryption.  Pur$€-¥vest should update any existing information security policies to reflect the merger and to provide a comprehensive overview of security measures; such as access control, cloud computing, and working from home policies. Going forward, the firm should pay particular attention to the information security implications of employees working from home and consider if they can truly guarantee the security of the most sensitive data if it is to be accessed off-site. If they cannot ensure that data’s security, Pur$€-¥vest will need to find a new solution. 
+

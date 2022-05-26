@@ -33,6 +33,8 @@ const sideVariants = {
 const links = [
   
   { label: 'about', href: '/about' },
+  { label: 'projects', href: '/projects' },
+  { label: 'blog', href: '/blog' },
 
 ];
 export const Nav = () => {
@@ -44,7 +46,7 @@ export const Nav = () => {
       <nav className="flex items-center space-x-5 max-w-screen-lg mx-auto text-gray-300 dark:text-gray-200">
         <Link href="/">
           <a className="flex-grow">
-            <GiCampingTent className="w-5 h-5 mt-1 hover:text-gray-1000 dark:hover:text-gray-300" />
+            <GiCampingTent className="w-8 h-8 mt-1 hover:text-gray-1000 dark:hover:text-gray-300" />
           </a>
         </Link>
         <ul className="hidden md:flex items-center space-x-6 flex-grow">
