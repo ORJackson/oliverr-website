@@ -9,7 +9,7 @@ const Projects = () => {
       </h1>
       <div className="prose md:prose-lg prose-p:text-gray-900 dark:prose-p:text-gray-100 dark:prose-invert prose-gray mb-16">
         <p>
-          I have produced a few different software projects whilst at university and self-teaching.
+          I have produced a few different software projects whilst at university and through self-teaching.
 
           Check out my GitHub for more info.
          
