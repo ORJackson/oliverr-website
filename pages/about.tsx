@@ -38,7 +38,7 @@ const About = () => {
 
         <p>
         My experience in Amsterdam working for a young, fast growing, and technology focussed company, coupled with my business experience and some time spent online learning to code all gave me a taste for the opportunities held in the world of technology, 
-        leading me to enroll in a Master&apos;s in Computer Science at Swansea University in Wales. 
+        leading me to enroll in the Master&apos;s in Computer Science that I am about to graduate from here in Wales. 
 
         </p>
 
