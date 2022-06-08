@@ -13,16 +13,13 @@ export const Hero = () => {
             Oliver R Jackson
           </h1>
           <p className="text-xl mb-5">
-            Computer Science MSc student
-          </p>
-          <p className="text-xl">
-           Soon to be: Software Engineer 
-          </p>
-          <p className="text-xl">
-           Previously: Director of Operations @ Spatial
+            Aspiring Software Engineer
           </p>
           <p className="text-xl mb-5">
-           Surfing, skiing, new to sport climbing 
+            Computer Science MSc student
+          </p>
+          <p className="text-xl mb-5">
+           Previously: Director of Operations @ Spatial
           </p>
         </div>
 

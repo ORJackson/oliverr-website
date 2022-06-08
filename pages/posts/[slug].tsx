@@ -25,37 +25,23 @@ type Props = {
 
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
 
-    // // get setters
-    // const { setPrerequisites, setStacks } = useMdxComponentsContext();
-
-    // useEffect(() => {
-    //     // set prerequisites
-    //     setPrerequisites(frontMatter.prerequisites);
-    //     // set stacks
-    //     setStacks(frontMatter.stacks);
-    // }, [
-    //     setPrerequisites,
-    //     setStacks,
-    //     frontMatter.prerequisites,
-    //     frontMatter.stacks
-    // ]);
-
     return (
        <div >
 
-            {/* <article className="prose prose-green">
-                <div className="mb-4"> */}
-            <article className=" m-auto prose md:prose-lg prose-p:text-gray-900 dark:prose-p:text-gray-100 dark:prose-invert prose-gray mb-16">
-            {/* <article> */}
+{/* <div className="pt-6 md:pt-20 max-w-2xl mx-auto mb-16 px-2"> */}
+            <article className="  max-w-4xl m-auto prose md:prose-lg prose-p:text-gray-900 dark:prose-p:text-gray-100 dark:prose-invert prose-gray mb-16 ">
+                
+                <h1 className="mb-6 text-4xl md:text-4xl sm:text-4xl font-semibold tracking-wide py-6 ">{frontMatter.title}</h1>
+                <p>{frontMatter.description}</p>
                 <div className="mb-4">
                     <Thumbnail title={frontMatter.title} src={frontMatter.thumbnail} />
                 </div>
 
-                <h1 className="mb-6 text-4xl md:text-6xl font-semibold tracking-wide">{frontMatter.title}</h1>
+            
 
-                <p>{frontMatter.description}</p>
+                
 
-                {/* <MDXRemote components={components} {...source} /> */}
+                
                 <MDXRemote {...source} />
             </article>
         </div>

@@ -19,18 +19,5 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-// function MyApp({ Component, pageProps }: AppProps) {
-//   return (
-//     <MdxComponentsProvider>
-//       <ThemeProvider attribute="class">
-    
-//         <Layout>
-//             <Component {...pageProps} />
-//         </Layout>
-    
-//       </ThemeProvider>
-//     </MdxComponentsProvider>
-//   )
-// }
 
 export default MyApp;
