@@ -23,7 +23,7 @@ const About = () => {
           My first degree was in Philosophy.
           I loved it as it was essentially a degree in problem-solving, plus you get to debate complex issues and reimagine how the world should work starting from first principles. 
           Between my first and second degrees, I worked several different jobs, travelled, and started a business. 
-          Going back to university and transitioning from philosophy to computer science was quite a significant change of pace. 
+          Going back to university and transitioning from philosophy to computer science was quite a significant change. 
           It had been several years since I had had to wrap my head around such complex concepts, and many of my peers came from hard science backgrounds.
           
         </p>
