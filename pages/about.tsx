@@ -16,7 +16,7 @@ const About = () => {
         </p>
 
         <p> 
-          I really enjoy the challenges involved in writing code, which led me to return to studying. The language I am strongest in is Java, though I am also familiar with Python, SQL, TypeScript, Javascript, and HTML/CSS.
+          I really enjoy the challenges involved in writing code. The language I am strongest in is Java, though I am also familiar with Python, SQL, TypeScript, Javascript, and HTML/CSS.
         </p>
 
         <p>
