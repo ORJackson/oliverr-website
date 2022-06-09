@@ -36,7 +36,7 @@ export const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/oliver-jackson-874a7b19b/"
+            href="https://www.linkedin.com/in/oliverrobinjackson/"
           >
             LinkedIn
           </a>
