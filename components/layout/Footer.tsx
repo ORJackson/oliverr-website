@@ -14,7 +14,7 @@ export const Footer = () => {
             <a>About</a>
           </Link>
         </div> */}
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4 items-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -23,7 +23,7 @@ export const Footer = () => {
             Twitter
           </a>
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4 items-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +32,7 @@ export const Footer = () => {
             GitHub
           </a>
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4 items-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
