@@ -11,7 +11,18 @@ const About = () => {
       </h1>
       {/* <div className="prose md:prose-lg prose-p:text-gray-900 dark:prose-p:text-gray-100 dark:prose-invert prose-gray mb-16"> */}
       <div className="prose md:prose-lg prose-p:text-gray-900 dark:prose-p:text-gray-100 dark:prose-invert prose-gray mb-16">
-        <p>
+        <p className = "pt-6">
+          TL;DR;
+        </p>
+        <ul>
+          <li className = "list-outside hover:list-inside" >Computer Science MSc. Predicted Distinction.</li>
+          <li className = "list-outside hover:list-inside" >Modules: Algorithms and Efficiency, Software Engineering, Java, Databases in SQL</li>
+          <li className = "list-outside hover:list-inside">Languages: Java, Python, SQL, Typescript, Javascript, HTML / CSS</li>
+          <li className = "list-outside hover:list-inside">Technical interests: software engineering, machine learning</li>
+          <li className = "list-outside hover:list-inside">BA Philosophy. 1st Class Hons.</li>
+        </ul>
+
+        <p className = "pt-8">
           Hi, I&#39;m Oliver. I am an aspiring object-oriented software engineer, and will soon graduate with a master&#39;s in Computer Science from Swansea University. 
           
         </p>
